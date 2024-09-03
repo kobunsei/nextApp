@@ -1,4 +1,4 @@
-import DashBoardShell from "@/components/dashboard-shell";
+import DashBoardShell from "@/components/dashboard/dashboard-shell";
 
 export default function SettingsPage() {
   return (

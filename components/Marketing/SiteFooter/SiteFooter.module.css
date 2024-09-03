@@ -1,0 +1,18 @@
+/* SiteFooter.module.css */
+
+.footer {
+    @apply h-20 bg-white border-t border-black flex items-center;
+  }
+  
+  .footerContent {
+    @apply flex items-center justify-between px-4 md:px-0;
+  }
+  
+  .text {
+    @apply text-sm md:text-left;
+  }
+  
+  .link {
+    @apply underline underline-offset-4 font-medium;
+  }
+  

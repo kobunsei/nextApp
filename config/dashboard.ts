@@ -14,19 +14,34 @@ export const dashboardConfig: DashboardConfig = {
   ],
   sidebarNav: [
     {
-      title: "投稿",
+      title: "ダッシュボード",
       href: "/dashboard",
-      icon: "post",
+      icon: "Home",
     },
     {
-      title: "売上配信",
-      href: "/dashboard/billing",
-      icon: "billing",
+      title: "売上",
+      href: "/sales",
+      icon: "ShoppingCartIcon",
     },
     {
-      title: "設定",
-      href: "/dashboard/settings",
-      icon: "settings",
+      title: "イベント",
+      href: "/events",
+      icon: "CalendarIcon",
+    },
+    {
+      title: "プロフィール",
+      href: "/profile",
+      icon: "UserIcon",
+    },
+    {
+      title: "通知",
+      href: "/notifications",
+      icon: "BellIcon",
+    },
+    {
+      title: "サポート",
+      href: "/support",
+      icon: "HeadphonesIcon",
     },
   ],
 };

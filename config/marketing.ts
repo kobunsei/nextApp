@@ -1,18 +1,31 @@
 import { MarketingConfig } from "@/types";
 
 export const marketingConfig: MarketingConfig = {
-  mainNav: [
+  mainSidebarNav: [
     {
-      title: "特徴",
-      href: "#features",
+      title: "ホーム",
+      href: "#hero",
+      icon: "HomeIcon",
     },
     {
-      title: "ショッピングセンター",
-      href: "/sc",
+      title: "私たちについて",
+      href: "#about",
+      icon: "InfoIcon",
     },
     {
-      title: "テナント",
-      href: "/tenant",
+      title: "店舗",
+      href: "#shops",
+      icon: "StoreIcon",
+    },
+    {
+      title: "イベント",
+      href: "#events",
+      icon: "CalendarIcon",
+    },
+    {
+      title: "お問い合わせ",
+      href: "#news",
+      icon: "MailIcon",
     },
   ],
 };

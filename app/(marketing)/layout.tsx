@@ -1,9 +1,7 @@
-import MainNav from "@/components/main-nav";
-import SiteFooter from "@/components/site-footer";
-import { buttonVariants } from "@/components/ui/button";
+import MainNav from "@/components/Marketing/MainNav/MainNav";
+import Header from "@/components/Marketing/Header/Header";
+import SiteFooter from "@/components/Marketing/SiteFooter/SiteFooter";
 import { marketingConfig } from "@/config/marketing";
-import { cn } from "@/lib/utils";
-import Link from "next/link";
 
 export default function MarketingLayout({
   children,
@@ -11,25 +9,17 @@ export default function MarketingLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div>
-      <header className="container z-40 bg-background">
-        <div className="h-20 py-6 flex items-center justify-between">
-          <MainNav items={marketingConfig.mainNav} />
-          <nav>
-            <Link
-              href={"/login"}
-              className={cn(
-                buttonVariants({ variant: "secondary", size: "sm" }),
-                "px-4"
-              )}
-            >
-              ログイン
-            </Link>
-          </nav>
-        </div>
-      </header>
-      <main>{children}</main>
-      <SiteFooter />
+    <div className="flex min-h-screen">
+      <nav className="w-[250px] bg-gray-800 min-h-screen flex-shrink-0 text-white">
+        <MainNav items={marketingConfig.mainSidebarNav} />
+      </nav>
+      <div className="flex flex-col flex-1">
+        <Header />
+        <main className="flex-1 p-4">
+          {children}
+        </main>
+        <SiteFooter />
+      </div>
     </div>
   );
 }

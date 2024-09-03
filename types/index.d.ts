@@ -1,4 +1,4 @@
-import { Icon } from "@/components/icon";
+import { Icon } from "@/components/icon/icon";
 
 export type NavItem = {
   title: string;
@@ -17,7 +17,7 @@ export type SiteConfig = {
 };
 
 export type MarketingConfig = {
-  mainNav: NavItem[];
+  mainSidebarNav:MainSidebarNav[];
 };
 
 export type SidebarNavItem = {
@@ -40,3 +40,19 @@ export type DashboardConfig = {
   mainNav: NavItem[];
   sidebarNav: SidebarNavItem[];
 };
+
+export type MainSidebarNavItem = {
+  title: string;
+  disabled?: boolean;
+  external?: boolean;
+  icon?: keyof typeof Icon;
+} & (
+  | {
+      href: string;
+      items?: never;
+    }
+  | {
+      href?: string;
+      items: NavItem[];
+    }
+);

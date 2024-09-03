@@ -1,7 +1,8 @@
 "use client";
+
 import { SidebarNavItem } from "@/types";
 import Link from "next/link";
-import { Icon as Icons } from "./icon";
+import { Icon as Icons } from "../icon/icon";
 import { usePathname } from "next/navigation";
 
 interface DashboardNavProps {

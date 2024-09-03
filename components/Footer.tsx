@@ -15,15 +15,7 @@ export default function SiteFooter() {
           >
             Kou515
           </Link>
-          . Hosted on {""}
-          <Link
-            href={"https://google.co.jp"}
-            className="underline underline-offset-4 font-medium"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Google
-          </Link>
+          . Hosted on Amplify
         </p>
       </div>
     </footer>
